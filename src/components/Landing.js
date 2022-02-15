@@ -19,7 +19,9 @@ function Landing() {
           data && data.map(anime => (
               <div className="anime">
                   <img className="anime-img" src={anime.image_url}/>
-                  <h3 className="anime-heading">{anime.title}</h3>
+                  <div className="heading">
+                    <h3 className="anime-heading">{anime.title}</h3>
+                  </div>
               </div>
           ))
       }
